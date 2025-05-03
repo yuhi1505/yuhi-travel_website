@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__navbar">
+            <div class="header__logo">
+                <a href="../../../booking_web/index.html" class="header__logo-link">
+                    <img src="./assets/img/Logo/logo.png" alt="LOGO" class="header__logo-img">
+                </a>
+            </div>
+            <div class="header__nation">
+                <a href="#" class="header__flag-link">
+                    <a class="header__language">VIETNAMESE</a>
+                    <img src="./assets/img/Flag.webp" alt="LOGO" class="header__flag-img">
+                    <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                </a>
+            </div>
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item btn">CHỖ NGHỈ ĐÃ ĐẶT</li> 
+                <li class="header__navbar-item btn">ĐĂNG KÍ</li>
+                <li class="header__navbar-item btn">ĐĂNG NHẬP</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="background__slider">
+        <div class="slider__content">
+            <div class="slider-text">
+                <h1 class="slider__title">Resort</h1>
+                <p class="slider__subtitle">Tìm resort lý tưởng với bạn</p>
+            </div>
+            <div class="filters__slider">
+                <select class="filter-select" id="cityFilter">
+                    <option value="hochiminh">TP Hồ Chí Minh</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="cantho">Cần Thơ</option>
+                    <option value="dalat">Đà Lạt</option>
+                    <option value="vungtau">Vũng Tàu</option>
+                </select>
+                <input type="date" class="filter-select">
+                <input type="date" class="filter-select">
+                <select class="filter-select" id="roomFilter">
+                    <option>2 người lớn - 0 trẻ em - 1 phòng</option>
+                    <option>1 người lớn - 0 trẻ em - 1 phòng</option>
+                    <option>4 người lớn - 2 trẻ em - 2 phòng</option>
+
+                </select>
+                <button class="slider__button">Tìm</button>
+            </div>
+            <div class="slider__checkbox">
+                <input type="checkbox" id="business" class="slider__checkbox-input">
+                <label for="business" class="slider__checkbox-label">Tôi đi công tác</label>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="../../../booking_web/index.html">Trang chủ</a> <span>></span> <a href="#">Resort</a> <span>></span> Tất cả resort
+        </div>
+        <div class="content__header">
+            <h1 class="content-title">Những resort nổi bật</h1>
+            <p class="content-subtitle">Tìm ưu đãi resort tuyệt vời cho đêm nay hoặc chuyển đi sắp tới</p>
+        </div>
+        <div class="filters">
+            <button>Resort có đêm nay</button>
+            <button>Resort cho cuối tuần nay</button>
+        </div>
+        <div class="resort-grid">
+            <div class="resort-card">
+                <a href="#" class="resort-link">
+                    <div class="resort-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/597975100.jpg?k=cdc4fd006a303fc6e769058c0c015ae3c71b076504b17b782efe8d8005ab55cb&o=&hp=1" alt="Căn hộ" class="resort-image__img">
+                        <div class="resort-rating">8.2</div>
+                    </div>
+
+                </a>
+                <div class="resort-info">
+                    <h3 class="resort-name">Kim Resort - Khu Nghĩ Dưỡng Rừng Lá Kim</h3>
+                    <p class="resort-address">144b Vòng Lâm Viên, Đà Lạt</p>
+                    <span class="resort-descrip">Tại resort, các phòng đều có bàn làm việc, TV màn hình phẳng, phòng tắm riêng, ga trải giường và khăn tắm. Tất cả các phòng đều được thiết kế có két an toàn, trong đó một số phòng có ban công. Tất cả các phòng đều có minibar.
+
+                        Kim Resort - Khu Nghĩ Dưỡng Rừng Lá Kim có phục vụ bữa sáng thực đơn buffet.
+                        
+                        Chỗ nghỉ có sân chơi trẻ em. Đi xe đạp là hoạt động được ưa chuộng trong khu vực. Ngoài ra, Kim Resort - Khu Nghĩ Dưỡng Rừng Lá Kim có dịch vụ thuê ô tô.
+                        
+                        Resort cách Sân golf Dalat Palace Golf Club 5.2 km và Hồ Xuân Hương 5.8 km.
+                    </span>
+                    <div class="resort-price">VND 1.047.099</div>
+                    <div class="resort-per-night">Cho đêm nay</div>
+                </div>
+                <div class="resort-book-btn">
+                    <a href="#"><button class="resort-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 2 -->
+            <div class="resort-card">
+                <a href="#" class="resort-link">
+                    <div class="resort-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/569543937.jpg?k=d100b7961bcd1e8045f632c55df7b89af5d78a48265448f832bfc8cec4e93e78&o=" alt="Căn hộ" class="resort-image__img">
+                        <div class="resort-rating">9.3</div>
+                    </div>
+
+                </a>
+                <div class="resort-info">
+                    <h3 class="resort-name">Hidden Mansions Saigon Resort</h3>
+                    <p class="resort-address">112 Đường Võ Thị Liễu, Quận 12, TP. Hồ Chí Minh</p>
+                    <span class="resort-descrip">Nằm ở TP. Hồ Chí Minh, cách Trung tâm thương mại Vincom Thủ Đức 9.1 km, Hidden Mansions Saigon Resort cung cấp chỗ nghỉ có hồ bơi ngoài trời, chỗ đậu xe riêng miễn phí, khu vườn và sân hiên. Chỗ nghỉ này có quầy bar, cũng như nhà hàng phục vụ ẩm thực Việt.
+                         Chỗ nghỉ cung cấp lễ tân 24/24, dịch vụ đưa đón sân bay, dịch vụ phòng và Wi-Fi miễn phí ở toàn bộ chỗ nghỉ.
+                         Hidden Mansions Saigon Resort cách Bảo tàng lịch sử Việt Nam 12 km và Trung tâm mua sắm AEON MALL Bình Dương Canary 13 km.
+                    </span>
+                    <div class="resort-price">VND 789.750</div>
+                    <div class="resort-per-night">Cho đêm nay</div>
+                </div>
+                <div class="resort-book-btn">
+                    <a href="#"><button class="resort-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 3 -->
+            <div class="resort-card">
+                <a href="#" class="resort-link">
+                    <div class="resort-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/512857833.jpg?k=fce336a0872aa01a8092fb0cfebdf4e64e48bc38c127c4fc9e72b9b2dd9b7ef3&o=" alt="Căn hộ" class="resort-image__img">
+                        <div class="resort-rating">8.2</div>
+                    </div>
+
+                </a>
+                <div class="resort-info">
+                    <h3 class="resort-name">Seaside Resort Vung Tau</h3>
+                    <p class="resort-address">28 Tran Phu, Vũng Tàu</p>
+                    <span class="resort-descrip">Seaside Resort Vung Tau cách Bãi Sau (Bãi biển Công cộng) 20 phút lái xe. Cảng Tàu Tốc hành cách nơi đây 3 km và khách đi xe 10 phút là đến được Bạch Dinh (White Palace).
+
+                        Trung tâm dịch vụ doanh nhân tại đây cung cấp dịch vụ fax và phô-tô miễn phí. Khách sạn cũng có xe đạp cho thuê, phòng họp và chỗ giữ hành lý. Báo hàng ngày cũng có sẵn tại quầy lễ tân.
+                        
+                        Để phục vụ ăn uống, nơi này có nhà hàng trong khuôn viên cung cấp món ăn Phương Tây và Việt Nam, dịch vụ phòng đáp ứng nhu cầu ăn uống trong phòng cũng như tiện nghi tiệc nướng ngoài trời.
+                    </span>
+                    <div class="resort-price">VND 1.061.400</div>
+                    <div class="resort-per-night">Cho đêm nay</div>
+                </div>
+                <div class="resort-book-btn">
+                    <a href="#"><button class="resort-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 4 -->
+            <div class="resort-card">
+                <a href="#" class="resort-link">
+                    <div class="resort-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/477544354.jpg?k=70542e5acf0e98e107bc9678a76deb9144ec24fdb97c33e89ec971de5f4036cd&o=&hp=1" alt="Căn hộ" class="resort-image__img">
+                        <div class="resort-rating">9.4</div>
+                    </div>
+
+                </a>
+                <div class="resort-info">
+                    <h3 class="resort-name">SV Boutique Resort</h3>
+                    <p class="resort-address">66/15 Hạ Long, Phường 2, Thành Phố Vũng Tàu, Vũng Tàu</p>
+                    <span class="resort-descrip">Nằm trong một tòa nhà thuộc địa kiểu Pháp ở sườn đồi và có hồ bơi vô cực đầy mời gọi với khung cảnh biển làm nền, SV Boutique Resort cung cấp chỗ nghỉ được bài trí trang nhã tại thành phố cảng Vũng Tàu.
+                         Khách lưu trú tại chỗ nghỉ có khu vườn bao quanh này có thể thưởng thức đồ uống tự chọn tại quầy bar trong khuôn viên. Chỗ nghỉ này cung cấp WiFi miễn phí trong toàn bộ khuôn viên.
+                         Những khách lái xe tới chỗ nghỉ có thể sử dụng chỗ đỗ xe miễn phí trong khuôn viên. SV Boutique Resort nằm cách Tượng Chúa Kitô Vua 900 m và Mũi Nghinh Phong 1,3 km.
+                          Bến phà gần nhất nằm trong bán kính 10 phút đi bộ từ SV Boutique Resort trong khi sân bay gần nhất là sân bay quốc tế Tân Sơn Nhất, cách đó 72 km.
+                    </span>
+                    <div class="resort-price">VND 1.168.268</div>
+                    <div class="resort-per-night">Cho đêm nay</div>
+                </div>
+                <div class="resort-book-btn">
+                    <a href="#"><button class="resort-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 5 -->
+            <div class="resort-card">
+                <a href="#" class="resort-link">
+                    <div class="resort-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/568656579.jpg?k=a6eb57a4b11f22b464157063f78a51eb423d6da195da94563cb48cc2f0237813&o=" alt="Căn hộ" class="resort-image__img">
+                        <div class="resort-rating">7.7</div>
+                    </div>
+
+                </a>
+                <div class="resort-info">
+                    <h3 class="resort-name">Paradise Soc Son Resort</h3>
+                    <p class="resort-address">10 Suối Mới, Nam Sơn, Sóc Sơn, Hà Nội, Vietnam, Hà Nội</p>
+                    <span class="resort-descrip">Paradise Soc Son Resort có xe đạp miễn phí, hồ bơi ngoài trời, trung tâm thể dục và khu vườn ở Hà Nội. Chỗ nghỉ này có các tiện nghi như phòng chờ chung, nhà hàng, cũng như quầy bar.
+                         Chỗ nghỉ cung cấp lễ tân 24/24, dịch vụ đưa đón sân bay, câu lạc bộ trẻ em và Wi-Fi miễn phí ở toàn bộ chỗ nghỉ.
+                         Paradise Soc Son Resort có sân chơi trẻ em. Khách có thể chơi bi-a, trò phi tiêu và sân chơi golf mini tại resort. Ngoài ra, leo núi và đi xe đạp là hoạt động được ưa chuộng trong khu vực.
+                        Paradise Soc Son Resort cách Phủ Thành Chương 3 km và Bảo tàng dân tộc học Việt Nam 34 km.
+                    </span>
+                    <div class="resort-price">VND 1.625.000</div>
+                    <div class="resort-per-night">Cho đêm nay</div>
+                </div>
+                <div class="resort-book-btn">
+                    <a href="#"><button class="resort-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 6 -->
+            <div class="resort-card">
+                <a href="#" class="resort-link">
+                    <div class="resort-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/336309078.jpg?k=fa2611bc82d8cc9473a7fd80010e9f1b014b4b6a45fbe3e461b06ae0a36e01e2&o=" alt="Căn hộ" class="resort-image__img">
+                        <div class="resort-rating">8.4</div>
+                    </div>
+
+                </a>
+                <div class="resort-info">
+                    <h3 class="resort-name">Cantho Eco Resort</h3>
+                    <p class="resort-address">Km7, Quốc Lộ 61C, Nhơn Nghĩa, Phong Điền, Cần Thơ, Cần Thơ</p>
+                    <span class="resort-descrip">Nằm ở Cần Thơ, cách Trung tâm thương mại Vincom Xuân Khánh 14 km, Cantho Eco Resort cung cấp chỗ nghỉ có hồ bơi ngoài trời, chỗ đậu xe riêng miễn phí, trung tâm thể dục và khu vườn. 
+                        Ngoài nhà hàng, resort 4 sao này còn có các phòng với điều hòa được trang bị Wi-Fi miễn phí, trong đó mỗi phòng đều có phòng tắm riêng.Chỗ nghỉ này cung cấp câu lạc bộ trẻ em, dịch vụ phòng và phòng giữ hành lý cho khách.
+                        Resort cách Bến Ninh Kiều 16 km và Vincom Plaza Hùng Vương 16 km.
+                    </span>
+                    <div class="resort-price">VND 1.155.000</div>
+                    <div class="resort-per-night">Cho đêm nay</div>
+                </div>
+                <div class="resort-book-btn">
+                    <a href="#"><button class="resort-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 7 -->
+            <div class="resort-card">
+                <a href="#" class="resort-link">
+                    <div class="resort-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/269394411.jpg?k=623c1e49b384dccd2e70b3fbe26ad087b51da0702ae00c0f0fc1d71130fb30b9&o=&hp=1" alt="Căn hộ" class="resort-image__img">
+                        <div class="resort-rating">9.3</div>
+                    </div>
+
+                </a>
+                <div class="resort-info">
+                    <h3 class="resort-name">Mercure Vung Tau Resort</h3>
+                    <p class="resort-address">03-06 Ha Long Street, Ward 2, Vũng Tàu</p>
+                    <span class="resort-descrip">Khách có thể thưởng thức bữa sáng thực đơn buffet, kiểu Mỹ hoặc kiểu Á tại chỗ nghỉ.
+
+                        Đi xe đạp là hoạt động được ưa chuộng trong khu vực. Ngoài ra, chỗ nghỉ có dịch vụ thuê xe đạp.
+                        
+                        Thành thạo tiếng Anh, tiếng Hindi, tiếng Việt và tiếng Hoa, đội ngũ nhân viên tại lễ tân luôn sẵn lòng đưa ra thông tin hữu ích về khu vực xung quanh.
+                        
+                        Các điểm tham quan nổi tiếng gần Mercure Vung Tau Resort bao gồm Bãi Dứa, Bãi Sau và Mũi Nghinh Phong.
+                    </span>
+                    <div class="resort-price">VND 2.058.509</div>
+                    <div class="resort-per-night">Cho đêm nay</div>
+                </div>
+                <div class="resort-book-btn">
+                    <a href="#"><button class="resort-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 8 -->
+            <div class="resort-card">
+                <a href="#" class="resort-link">
+                    <div class="resort-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max300/591439697.jpg?k=876e6084ad20cc6c75ea162cd84f3e2a790e369f056fedd7376b034c1aab37bb&o=" alt="Căn hộ" class="resort-image__img">
+                        <div class="resort-rating">8.4</div>
+                    </div>
+
+                </a>
+                <div class="resort-info">
+                    <h3 class="resort-name">Dalat Wonder Resort</h3>
+                    <p class="resort-address">19 Hoa Hong Street, Ward 4, Ho Tuyen Lam, Đà Lạt</p>
+                    <span class="resort-descrip">Tọa lạc ở Đà Lạt, cách Thiền Viện Trúc Lâm 7.1 km, Dalat Wonder Resort cung cấp chỗ nghỉ có hồ bơi ngoài trời, chỗ đậu xe riêng miễn phí, trung tâm thể dục và khu vườn. Resort 4 sao này cung cấp quầy bar. Chỗ nghỉ cung cấp lễ tân 24/24, dịch vụ đưa đón sân bay, dịch vụ phòng và Wi-Fi miễn phí.
+
+                        Mỗi phòng đều có phòng tắm riêng, trong đó một số phòng có ban công và một số khác cũng nhìn ra hồ.
+                        
+                        Khách tại resort có thể thưởng thức bữa sáng thực đơn buffet. Tại Dalat Wonder Resort, khách sẽ tìm thấy nhà hàng phục vụ ẩm thực Việt, địa phương và Á. Bên cạnh đó, họ có thể yêu cầu món chay.
+                        
+                        Khách tại chỗ nghỉ sẽ có thể tận hưởng các hoạt động ở trong Đà Lạt và khu vực xung quanh, như leo núi.
+                        
+                        Dalat Wonder Resort cách Hồ Tuyền Lâm 7.2 km và Quảng trường Lâm Viên 10 km.
+                    </span>
+                    <div class="resort-price">VND 1.324.540</div>
+                    <div class="resort-per-night">Cho đêm nay</div>
+                </div>
+                <div class="resort-book-btn">
+                    <a href="#"><button class="resort-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-lists">
+            <div class="footer-group-support">
+                <h3 class="footer-group-title">Hỗ Trợ</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Câu hỏi thường gặp</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Liên hệ chúng tôi</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Hướng dẫn đặt phòng</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách hoàn tiền</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Trung tâm bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-discover">
+                <h3 class="footer-group-title">Khám phá</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình Genius</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Ưu đãi theo mùa</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Bài viết du lịch</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Dành cho doanh nghiệp</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Đại lý du lịch</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-partner">
+                <h3 class="footer-group-title">Quan hệ đối tác</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Đăng ký đối tác</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Trở thành đại lý</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình liên kết</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Quản lý tài khoản</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Hỗ trợ đối tác</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-legalAndsetting">
+                <h3 class="footer-group-title">Điều khoản và cài đặt</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Điều khoản sử dụng</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách bảo mật</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách cookie</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Quyền riêng tư</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Cài đặt ngôn ngữ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-control">
+            <p>Bản quyền © 2025 Booking.com. Mọi quyền được bảo lưu.</p>
+            <p>
+                <a href="#">Điều khoản</a> |
+                <a href="#">Chính sách bảo mật</a> |
+                <a href="#">Liên hệ</a>
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>

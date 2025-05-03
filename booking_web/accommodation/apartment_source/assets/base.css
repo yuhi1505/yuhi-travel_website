@@ -1,0 +1,27 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+    --primary-color:linear-gradient(to right, #89f7fe, #66a6ff);
+    --border-color:#dbdbdb;  
+    --btn-color: linear-gradient(to right, #4facfe, #00f2fe);
+    --rating-color: #003b95;
+    /* background: linear-gradient(to right, #d4fc79, #96e6a1); */
+    --background-color: linear-gradient(to right, #4facfe, #002c95);
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    
+}
+
+
+html {
+    font-size: 62.5%;
+    line-height: 16px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}

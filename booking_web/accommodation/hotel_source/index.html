@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách sạn</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__navbar">
+            <div class="header__logo">
+                <a href="../../../booking_web/index.html" class="header__logo-link">
+                    <img src="./assets/img/Logo/logo.png" alt="LOGO" class="header__logo-img">
+                </a>
+            </div>
+            <div class="header__nation">
+                <a href="#" class="header__flag-link">
+                    <a class="header__language">VIETNAMESE</a>
+                    <img src="./assets/img/Flag.webp" alt="LOGO" class="header__flag-img">
+                    <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                </a>
+            </div>
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item btn">CHỖ NGHỈ ĐÃ ĐẶT</li> 
+                <li class="header__navbar-item btn">ĐĂNG KÍ</li>
+                <li class="header__navbar-item btn">ĐĂNG NHẬP</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="background__slider">
+        <div class="slider__content">
+            <div class="slider-text">
+                <h1 class="slider__title">Khách sạn</h1>
+                <p class="slider__subtitle">Tìm khách sạn lý tưởng với bạn</p>
+            </div>
+            <div class="filters__slider">
+                <select class="filter-select" id="cityFilter">
+                    <option value="hochiminh">TP Hồ Chí Minh</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="cantho">Cần Thơ</option>
+                    <option value="dalat">Đà Lạt</option>
+                    <option value="vungtau">Vũng Tàu</option>
+                </select>
+                <input type="date" class="filter-select">
+                <input type="date" class="filter-select">
+                <select class="filter-select" id="roomFilter">
+                    <option>2 người lớn - 0 trẻ em - 1 phòng</option>
+                    <option>1 người lớn - 0 trẻ em - 1 phòng</option>
+                    <option>4 người lớn - 2 trẻ em - 2 phòng</option>
+
+                </select>
+                <button class="slider__button">Tìm</button>
+            </div>
+            <div class="slider__checkbox">
+                <input type="checkbox" id="business" class="slider__checkbox-input">
+                <label for="business" class="slider__checkbox-label">Tôi đi công tác</label>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="../../../booking_web/index.html">Trang chủ</a> <span>></span> <a href="#">Khách sạn</a> <span>></span> Tất cả khách sạn
+        </div>
+        <div class="content__header">
+            <h1 class="content-title">Những khách sạn nổi bật</h1>
+            <p class="content-subtitle">Tìm ưu đãi khách sạn tuyệt vời cho đêm nay hoặc chuyển đi sắp tới</p>
+        </div>
+        <div class="filters">
+            <button>Khách sạn có đêm nay</button>
+            <button>Khách sạn cho cuối tuần nay</button>
+        </div>
+        <div class="hotel-grid">
+            <div class="hotel-card">
+                <a href="#" class="hotel-link">
+                    <div class="hotel-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/347391971.jpg?k=dc6c4b41f989aeccebdf0ed91b7f0992db102eb60b933d02b7eb823be3d523ac&o=&hp=1" alt="Khách sạn" class="hotel-image__img">
+                        <div class="hotel-rating">8.9</div>
+                    </div>
+
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Khách sạn La Vela Sài Gòn</h3>
+                    <p class="hotel-address">Quận 3</p>
+                    <span class="hotel-descrip">Nằm ở TP. Hồ Chí Minh, cách Chợ Tân Định 8 phút đi bộ, La Vela Saigon Hotel cung cấp chỗ nghỉ có hồ bơi ngoài trời,
+                        chỗ đậu xe riêng miễn phí, trung tâm thể dục và phòng chờ chung.
+                        Khách sạn có sân hiên và nhìn ra thành phố, ngoài ra du khách có thể thưởng thức bữa ăn tại nhà hàng hoặc đồ uống tại quầy bar.
+                    </span>
+                    <div class="hotel-price">VND 3.678.400</div>
+                    <div class="hotel-per-night">Cho đêm nay</div>
+                </div>
+                <div class="hotel-book-btn">
+                    <a href="#"><button class="hotel-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 2 -->
+            <div class="hotel-card">
+                <a href="#" class="hotel-link">
+                    <div class="hotel-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/624301549.jpg?k=16e34ca56bf781824c58b4a82460b83372da8488c03e7df254cf00689abefaf4&o=" alt="Khách sạn" class="hotel-image__img">
+                        <div class="hotel-rating">9.2</div>
+                    </div>
+
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">LION 11 Can Tho Hotel</h3>
+                    <p class="hotel-address">33 Đường Châu Văn Liêm, 94000 Cần Thơ </p>
+                    <span class="hotel-descrip">Nằm cách Vincom Plaza Hùng Vương 2.1 km và Can Tho Stadium 3.1 km, LION 11 Can Tho Hotel cung cấp các phòng ở Cần Thơ.
+                        Đây là chỗ nghỉ không gây dị ứng và tọa lạc cách Bến Ninh Kiều 5 phút đi bộ.
+                        Các điểm tham quan nổi tiếng gần chỗ nghỉ bao gồm Trung tâm thương mại Vincom Xuân Khánh, Bảo tàng Cần Thơ và Cầu đi bộ Ninh Kiều. Sân bay Quốc tế Cần Thơ cách 10 km.                        
+                    </span>
+                    <div class="hotel-price">VND 453.700</div>
+                    <div class="hotel-per-night">Cho đêm nay</div>
+                </div>
+                <div class="hotel-book-btn">
+                    <a href="#"><button class="hotel-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 3 -->
+            <div class="hotel-card">
+                <a href="#" class="hotel-link">
+                    <div class="hotel-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max500/620723137.jpg?k=8ec210db2557ec7540e385bd543f01ce336ae3deeb2f2a0e77cca5646fc19943&o=" alt="Khách sạn" class="hotel-image__img">
+                        <div class="hotel-rating">9.4</div>
+                    </div>
+
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">The Song Apartment-Rose Vũng Tàu</h3>
+                    <p class="hotel-address">28 Đường Thi Sách, Phường Thắng Tam, Vũng Tàu</p>
+                    <span class="hotel-descrip">Nằm ở Vũng Tàu, The Song Apartment - Căn Hộ The Sóng -Rose Vũng Tàu cung cấp chỗ nghỉ có hồ bơi ngoài trời mở quanh năm, Wi-Fi miễn phí, khu vườn và sân hiên.
+                         Chỗ đậu xe riêng có sẵn trong khuôn viên.
+                         The Song Apartment - Căn Hộ The Sóng -Rose Vũng Tàu cách Bãi Sau chưa đến 1 km và Khu du lịch sinh thái văn hóa Hồ Mây 3.8 km.
+                    </span>
+                    <div class="hotel-price">VND 479.250</div>
+                    <div class="hotel-per-night">Cho đêm nay</div>
+                </div>
+                <div class="hotel-book-btn">
+                    <a href="#"><button class="hotel-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 4 -->
+            <div class="hotel-card">
+                <a href="#" class="hotel-link">
+                    <div class="hotel-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/668138309.jpg?k=4fcc83bd1837e80b0d143d4a04524b237e9cbf1ed90f41eb04840b99bb30a061&o=&hp=1" alt="Khách sạn" class="hotel-image__img">
+                        <div class="hotel-rating">9.4</div>
+                    </div>
+
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Landmark 81 Legacy Garden</h3>
+                    <p class="hotel-address">Quận Bình Thạnh, TP. Hồ Chí Minh, Việt Nam</p>
+                    <span class="hotel-descrip">Nằm ở TP. Hồ Chí Minh, cách Chợ Tân Định 8 phút đi bộ, La Vela Saigon Hotel cung cấp chỗ nghỉ có hồ bơi ngoài trời,
+                        chỗ đậu xe riêng miễn phí, trung tâm thể dục và phòng chờ chung.
+                        Khách sạn có sân hiên và nhìn ra thành phố, ngoài ra du khách có thể thưởng thức bữa ăn tại nhà hàng hoặc đồ uống tại quầy bar.
+                    </span>
+                    <div class="hotel-price">VND 1.375.000</div>
+                    <div class="hotel-per-night">Cho đêm nay</div>
+                </div>
+                <div class="hotel-book-btn">
+                    <a href="#"><button class="hotel-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 5 -->
+            <div class="hotel-card">
+                <a href="#" class="hotel-link">
+                    <div class="hotel-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/643209570.jpg?k=f2dee39ecf6f106853158e1a2a12bfa5871eb50fea2e5a70d135620d8dc643d2&o=&hp=1" alt="Khách sạn" class="hotel-image__img">
+                        <div class="hotel-rating">9.2</div>
+                    </div>
+
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Sheraton Can Tho</h3>
+                    <p class="hotel-address">30/4, Xuan Khanh , Ninh Kieu , Cần Thơ</p>
+                    <span class="hotel-descrip">Nằm cách Bến Ninh Kiều chỉ 2,4 km, tòa nhà trắng Sheraton Can Tho Hotel có hồ bơi ngoài trời đầy mời gọi.
+                        Khách sạn cũng cung cấp dịch vụ cho thuê xe hơi. Sheraton Can Tho Hotel nằm cách Chợ nổi Cái Răng 3,8 km và Bảo tàng Cần Thơ 2,3 km. Sân bay Rạch Giá nằm trong bán kính 70 km từ chỗ nghỉ.
+                    </span>
+                    <div class="hotel-price">VND 1.800.000</div>
+                    <div class="hotel-per-night">Cho đêm nay</div>
+                </div>
+                <div class="hotel-book-btn">
+                    <a href="#"><button class="hotel-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 6 -->
+            <div class="hotel-card">
+                <a href="#" class="hotel-link">
+                    <div class="hotel-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/654443883.jpg?k=fb457c896b596518f362dfdf6421f7e587085c82eeedb4e59134e9b83417ca3c&o=&hp=1" alt="Khách sạn" class="hotel-image__img">
+                        <div class="hotel-rating">9.7</div>
+                    </div>
+
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Panorama Nha Trang SanVilla</h3>
+                    <p class="hotel-address">1b Nguyễn Thị Minh Khai 20, 650000 Nha Trang</p>
+                    <span class="hotel-descrip">Các điểm tham quan nổi tiếng gần Panorama Nha Trang SanVilla bao gồm Bãi biển Nha Trang, Tháp Trầm Hương và Trung tâm thương mại Nha Trang Center. Sân bay quốc tế Cam Ranh cách 35 km.
+                        Nằm ở Nha Trang, Panorama Nha Trang SanVilla cung cấp Wi-Fi miễn phí, nơi khách có thể trải nghiệm khu vực bãi biển riêng, sân hiên và quầy bar.
+
+                    </span>
+                    <div class="hotel-price">VND 745.000</div>
+                    <div class="hotel-per-night">Cho đêm nay</div>
+                </div>
+                <div class="hotel-book-btn">
+                    <a href="#"><button class="hotel-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 7 -->
+            <div class="hotel-card">
+                <a href="#" class="hotel-link">
+                    <div class="hotel-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max500/659832445.jpg?k=e3683024b62fa6fc8258404cefd8f71181cab0587a350c0a74abf879eb71476c&o=" alt="Khách sạn" class="hotel-image__img">
+                        <div class="hotel-rating">9.5</div>
+                    </div>
+
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Le Petit Prince Hotel & Rooftop Bar</h3>
+                    <p class="hotel-address">58 Phố Hàng Gai, Quận Hoàn Kiếm, 100000 Hà Nội</p>
+                    <span class="hotel-descrip">Le Petit Prince Hotel & Rooftop Bar có phòng chờ chung, sân hiên, nhà hàng và quầy bar ở Hà Nội. Chỗ nghỉ nằm gần một số điểm tham quan nổi tiếng,
+                         cách Ô Quan Chưởng khoảng chưa đến 1 km, Ga Hà Nội khoảng 16 phút đi bộ, Nhà thờ Thánh Joseph khoảng 400 m. 
+                    </span>
+                    <div class="hotel-price">VND 1.907.500</div>
+                    <div class="hotel-per-night">Cho đêm nay</div>
+                </div>
+                <div class="hotel-book-btn">
+                    <a href="#"><button class="hotel-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 8 -->
+            <div class="hotel-card">
+                <a href="#" class="hotel-link">
+                    <div class="hotel-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/522869651.jpg?k=c62561adc2b7ae6da2cc478523c2eec8219e98e44423a0ae58220e9595b65655&o=&hp=1" alt="Khách sạn" class="hotel-image__img">
+                        <div class="hotel-rating">8.9</div>
+                    </div>
+
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">Le House DaLat</h3>
+                    <p class="hotel-address">124 Đường Phạm Ngọc Thạch, Đà Lạt</p>
+                    <span class="hotel-descrip">Tọa lạc ở Đà Lạt, cách Quảng trường Lâm Viên 2.7 km, Le House DaLat cung cấp chỗ nghỉ có khu vườn, chỗ đậu xe riêng miễn phí, phòng chờ chung và sân hiên.
+                        Le House DaLat cách Hồ Xuân Hương 2.9 km và Công viên Yersin 3 km.
+                    </span>
+                    <div class="hotel-price">VND 1.090.000</div>
+                    <div class="hotel-per-night">Cho đêm nay</div>
+                </div>
+                <div class="hotel-book-btn">
+                    <a href="#"><button class="hotel-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-lists">
+            <div class="footer-group-support">
+                <h3 class="footer-group-title">Hỗ Trợ</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Câu hỏi thường gặp</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Liên hệ chúng tôi</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Hướng dẫn đặt phòng</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách hoàn tiền</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Trung tâm bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-discover">
+                <h3 class="footer-group-title">Khám phá</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình Genius</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Ưu đãi theo mùa</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Bài viết du lịch</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Dành cho doanh nghiệp</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Đại lý du lịch</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-partner">
+                <h3 class="footer-group-title">Quan hệ đối tác</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Đăng ký đối tác</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Trở thành đại lý</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình liên kết</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Quản lý tài khoản</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Hỗ trợ đối tác</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-legalAndsetting">
+                <h3 class="footer-group-title">Điều khoản và cài đặt</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Điều khoản sử dụng</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách bảo mật</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách cookie</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Quyền riêng tư</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Cài đặt ngôn ngữ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-control">
+            <p>Bản quyền © 2025 YUHI travel.com. Mọi quyền được bảo lưu.</p>
+            <p>
+                <a href="#">Điều khoản</a> |
+                <a href="#">Chính sách bảo mật</a> |
+                <a href="#">Liên hệ</a>
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>

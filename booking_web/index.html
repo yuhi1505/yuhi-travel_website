@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuhi travel</title>
+    <link rel="stylesheet" href="./assets/css/home/style.css"> 
+    <link rel="stylesheet" href="./assets/css/home/base.css">  
+    
+    <link rel="stylesheet" href="./font/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+  
+</head>
+<body>
+    <div id="main">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header__navbar">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <img src="./assets/img/Logo/logo.png" alt="LOGO" class="header__logo-img">
+                    </a>
+                </div>
+                <div class="header__nation">
+                    <a href="#" class="header__flag-link">
+                        <a class="header__language">VIETNAMESE</a>
+                        <img src="./assets/img/Flag.webp" alt="LOGO" class="header__flag-img">
+                        <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                    </a>
+                </div>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item btn">BOOKED</li> 
+                    <li class="header__navbar-item btn">REGISTER</li>
+                    <li class="header__navbar-item btn" id="sign-in-btn">SIGN IN</li>
+                </ul>
+            </div>
+        </div>
+         <!-- MODAL ĐĂNG NHẬP -->
+         <div class="modal" id="login-modal">
+            <div class="modal__content">
+                <i class="modal__close fas fa-times" id="close-modal"></i>
+                <h1>Đăng nhập hoặc tạo tài khoản</h1>
+                <p>Đăng nhập để sử dụng các dịch vụ của Yuhi Travel và nhận được nhiều ưu đãi hấp dẫn.</p>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Nhập địa chỉ email của bạn">
+                    <div id="email-validation" class="validation-message">Vui lòng nhập email hợp lệ</div>
+                </div>
+                
+                <button class="btn" id="continue-btn">Tiếp tục với email</button>
+                
+                <div class="separator">hoặc</div>
+                
+                <div class="social-login">
+                    <button class="social-btn" id="google-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"></path>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path>
+                        </svg>
+                        Đăng nhập với Google
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="slider">
+            <div class="text-content">
+                <h2 class="content-tiltle " style="font-size: 46px; font-weight: 600;">HAVE A RELAXING TRIP</h2>
+                <p class="content-subtiltle" style="margin-top: 40px; font-size: 22px;">CHOOSE FROM HOUSE, HOTEL, MORE</p>
+
+            </div>
+            <div class="content__slider-search">
+                <div class="content__left">
+                    <div class="search-bar">
+                        <div class="search-bar__item">
+                            <i class="fa fa-bed"></i>
+                            <input type="text" class="search-bar__input" placeholder="Bạn muốn đến đâu?">
+                        </div>
+                        <div class="search-bar__item">
+                            <input type="text" class="search-bar__input" placeholder="Nhận phòng" onfocus="(this.type='date')">
+                        </div>
+                        <div class="search-bar__item">
+                            <input type="text" class="search-bar__input" placeholder="Trả phòng" onfocus="(this.type='date')">
+                        </div>
+                        <div class="search-bar__item">
+                            <span class="search-bar__guests">2 người lớn · 0 trẻ em · 1 phòng</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <button class="search-bar__button">Tìm</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- PROPERTY TYPE -->
+        <div class="content">
+            <div class="content-section">
+                <h2 class="section-heading">Tìm theo loại chỗ nghỉ</h2>
+                <div class="section_destination-list">
+                    <a href="../booking_web/accommodation/hotel_source/index.html" class="destination-link">
+                        <div class="destination-item">
+                            <img src="https://th.bing.com/th/id/OIP.t2ybnhmUKMNhP6RdoyCaZgHaEo?rs=1&pid=ImgDetMain" alt="HOTEL" class="destination-image">
+                            <p class="destination-name">Khách sạn</p>
+                        </div>
+                    </a>
+                    <a href="../booking_web/accommodation/apartment_source/index.html" class="destination-link">
+                        <div class="destination-item">
+                            <img src="https://th.bing.com/th/id/OIP.yWZXrEwa4612AwBbBWaBlgHaEX?w=1400&h=826&rs=1&pid=ImgDetMain" alt="APARMENT" class="destination-image">
+                            <p class="destination-name">Căn hộ</p>
+                        </div>
+                    </a>
+                    <a href="../booking_web/accommodation/resort_source/index.html" class="destination-link">
+                        <div class="destination-item">
+                            <img src="https://media.architecturaldigest.com/photos/57e42deafe422b3e29b7e790/master/pass/JW_LosCabos_2015_MainExterior.jpg" alt="RESORT" class="destination-image">
+                            <p class="destination-name">Resort</p>
+                        </div>
+                    </a>
+                    <a href="../booking_web/accommodation/villas_source/index.html" class="destination-link">
+                        <div class="destination-item">
+                            <img src="https://ubsvillas.com/wp-content/uploads/2024/06/villa-5102547_1280.jpg" alt="VILLA" class="destination-image">
+                            <p class="destination-name">Biệt thự</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- HOME GUESTS LOVE -->
+            <div class="content-section">
+                <h2 class="section-heading">Nhà ở mà khách yêu thích</h2>
+                
+                <div class="section__destination-prominent">
+                    <a class="home-guest-item" href="#">
+                        <div class="home-guest-item__img" style="background-image: url(https://www.lionhotel.vn/files/branch/room/i_92_979_z5779139595766_a784415de3b88ce7215835bc6c24157d.jpg);">
+                            
+                        </div>
+        
+                        <h4 class="home-guest-item__name">LION HOTEL</h4>
+                        <h5 class="home-guest-item__descrip">LION HOTEL tọa lạc ở Cần Thơ, cách Trung tâm thương mại Vincom Xuân Khánh 2.5 km và Bảo tàng Cần Thơ 15 phút đi bộ. 
+                            Khách sạn nằm cách Vinh Long Museum khoảng 43 km và Cầu đi bộ Ninh Kiều 2 km.</h5>
+                        
+
+                        
+                        <div class="home-guest-item__rating">
+                            <span class="home-guest-item__rank">8.1</span>
+                           
+                            <span class="home-guest-item__feedback ">Rất tốt</span>
+                            <span class="home-guest-item__reviews">/ 512 đánh giá</span>
+                        </div>
+                    
+                        <div class="home-guest-item__prices">
+                            <span class="home-guest-begin__price">Giá chỉ từ</span>
+                            <span class="home-guest-item__price">304.430 VNĐ</span>
+                            
+                        </div>
+
+                        <div class="home-guest-item__action">
+                            <span class="home-guest-item__like  home-guest-item__liked">
+                                <i class="home-guest-item__like-icon-no fa-regular fa-heart"></i>
+                                <!-- <i class="home-guest-item__like-icon-has fa-solid fa-heart"></i> -->
+                            </span>
+                            
+                        </div>
+                        
+                    </a>
+                    <!--  -->
+                    <a class="home-guest-item" href="#">
+                        <div class="home-guest-item__img" style="background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1280x900/651847155.jpg?k=b5036b4e322345b8f6cf6e4270c9aa56777167d6833fddc61b4873292b904306&o=&hp=1);">
+                            
+                        </div>
+        
+                        <h4 class="home-guest-item__name">CSJ TOWER </h4>
+                        <h5 class="home-guest-item__descrip">CSJ TOWER - Luxury Near Beach Apartments - Căn Hộ Du Lịch Cạnh Biển Thành Phố Biển Vũng Tàu cách Bãi Sau chỉ vài bước chân. 
+                            Sân bay Quốc tế Tân Sơn Nhất cách 99 km, đồng thời chỗ nghỉ có cung cấp dịch vụ đưa đón sân bay mất phí</h5>
+                        
+
+                        
+                        <div class="home-guest-item__rating">
+                            <span class="home-guest-item__rank">8.9</span>
+                           
+                            <span class="home-guest-item__feedback ">Rất tốt</span>
+                            <span class="home-guest-item__reviews">/ 160 đánh giá</span>
+                        </div>
+                    
+                        <div class="home-guest-item__prices">
+                            <span class="home-guest-begin__price">Giá chỉ từ</span>
+                            <span class="home-guest-item__price">680.000 VNĐ</span>
+                            
+                        </div>
+
+                        <div class="home-guest-item__action">
+                            <span class="home-guest-item__like  home-guest-item__liked">
+                                <i class="home-guest-item__like-icon-no fa-regular fa-heart"></i>
+                                <!-- <i class="home-guest-item__like-icon-has fa-solid fa-heart"></i> -->
+                            </span>
+                            
+                        </div>
+                        
+                    </a>
+                    <!--  -->
+                    <a class="home-guest-item" href="#">
+                        <div class="home-guest-item__img" style="background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/663910192.jpg?k=2f1476e2600b84aea0587b7a3c731c06b0b3cb6952e70742afa6b1027cd98461&o=&hp=1);">
+                            
+                        </div>
+        
+                        <h4 class="home-guest-item__name">SOHO RESIDENCE</h4>
+                        <h5 class="home-guest-item__descrip">Nằm cách Bảo tàng Mỹ thuật chưa đến 1 km,
+                             Imperial SOHO RESIDENCE Saigon cung cấp chỗ nghỉ có hồ bơi ngoài trời, khu vườn và quầy lễ tân 24 giờ.</h5>
+                        
+
+                        
+                        <div class="home-guest-item__rating">
+                            <span class="home-guest-item__rank">8.0</span>
+                           
+                            <span class="home-guest-item__feedback ">Tốt</span>
+                            <span class="home-guest-item__reviews">/ 75 reviews</span>
+                        </div>
+                    
+                        <div class="home-guest-item__prices">
+                            <span class="home-guest-begin__price">Giá chỉ từ</span>
+                            <span class="home-guest-item__price">575.710 VNĐ</span>
+                            
+                        </div>
+
+                        <div class="home-guest-item__action">
+                            <span class="home-guest-item__like  home-guest-item__liked">
+                                <i class="home-guest-item__like-icon-no fa-regular fa-heart"></i>
+                                <!-- <i class="home-guest-item__like-icon-has fa-solid fa-heart"></i> -->
+                            </span>
+                            
+                        </div>
+                        
+                    </a>
+                    <!--  -->
+                    <a class="home-guest-item" href="#">
+                        <div class="home-guest-item__img" style="background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/549248412.jpg?k=9b64099c29d2a13ffe3eeba019f9a9020708c62328d6094f43dd872d0a36e006&o=&hp=1);">
+                            
+                        </div>
+        
+                        <h4 class="home-guest-item__name">OCEANFRONT SUITES</h4>
+                        <h5 class="home-guest-item__descrip">Các điểm tham quan nổi tiếng gần OCEANFRONT SUITES NHA TRANG bao gồm Bãi biển Nha Trang, 
+                            Tháp Trầm Hương và Trung tâm thương mại Nha Trang Center. 
+                            Chỗ nghỉ cách Sân bay quốc tế Cam Ranh 35 km và cung cấp dịch vụ đưa đón sân bay mất phí..</h5>
+                        
+
+                        
+                        <div class="home-guest-item__rating">
+                            <span class="home-guest-item__rank">8.6</span>
+                           
+                            <span class="home-guest-item__feedback ">Tuyệt vời</span>
+                            <span class="home-guest-item__reviews">/ 260 đánh giá</span>
+                        </div>
+                    
+                        <div class="home-guest-item__prices">
+                            <span class="home-guest-begin__price">Giá chỉ từ</span>
+                            <span class="home-guest-item__price">780.000 VNĐ</span>
+                            
+                        </div>
+
+                        <div class="home-guest-item__action">
+                            <span class="home-guest-item__like  home-guest-item__liked">
+                                <i class="home-guest-item__like-icon-no fa-regular fa-heart"></i>
+                                <!-- <i class="home-guest-item__like-icon-has fa-solid fa-heart"></i> -->
+                            </span>
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <!--  -->
+            </div>
+
+            <!-- PLACE -->
+            <div class="content-section">
+                <h2 class="section-heading">Địa danh nổi tiếng</h2>
+                <div class="place__famous">
+                    <div class="place-item">
+
+                        <a href="" class="place__famous-item ">
+                            <img src="./assets/img/place/vung_tau.jpg" alt="VŨNG TÀU" class="place__famous-img">
+                            <p class="place__famous-name">VŨNG TÀU</p>
+                        </a>
+                        <a href="" class="place__famous-item ">
+                            <img src="./assets/img/place/da_lat.jpg" alt="ĐÀ LẠT" class="place__famous-img">
+                            <p class="place__famous-name">ĐÀ LẠT</p>
+                        </a>
+                   
+                    
+
+                        <a href="" class="place__famous-item ">
+                            <img src="./assets/img/place/nha_trang.jpg" alt="NHA TRANG" class="place__famous-img">
+                            <p class="place__famous-name">NHA TRANG</p>
+                        </a>
+                         <a href="" class="place__famous-item ">
+                            <img src="./assets/img/place/can_tho.jpg" alt="VŨNG TÀU" class="place__famous-img">
+                            <p class="place__famous-name">CẦN THƠ</p>
+                        </a>
+                        <a href="" class="place__famous-item ">
+                            <img src="./assets/img/place/ho-chi-minh-city.jpg" alt="HỒ CHÍ MINH" class="place__famous-img">
+                            <p class="place__famous-name">HỒ CHÍ MINH</p>
+                        </a>
+                        <a href="" class="place__famous-item ">
+                            <img src="./assets/img/place/ha-noi.jpg" alt="HÀ NỘI" class="place__famous-img">
+                            <p class="place__famous-name">HÀ NỘI</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>    
+        
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-lists">
+                <div class="footer-group-support">
+                    <h3 class="footer-group-title">Hỗ Trợ</h3>
+                    <ul class="footer-group-list">
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Câu hỏi thường gặp</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Liên hệ chúng tôi</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Hướng dẫn đặt phòng</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách hoàn tiền</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Trung tâm bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-group-discover">
+                    <h3 class="footer-group-title">Khám phá</h3>
+                    <ul class="footer-group-list">
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình Genius</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Ưu đãi theo mùa</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Bài viết du lịch</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Dành cho doanh nghiệp</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Đại lý du lịch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-group-partner">
+                    <h3 class="footer-group-title">Quan hệ đối tác</h3>
+                    <ul class="footer-group-list">
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Đăng ký đối tác</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Trở thành đại lý</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình liên kết</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Quản lý tài khoản</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Hỗ trợ đối tác</a></li>
+                    </ul>
+                </div>
+                <div class="footer-group-legalAndsetting">
+                    <h3 class="footer-group-title">Điều khoản và cài đặt</h3>
+                    <ul class="footer-group-list">
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Điều khoản sử dụng</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách bảo mật</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách cookie</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Quyền riêng tư</a></li>
+                        <li class="footer-group-item"><a href="#" class="footer-group-link">Cài đặt ngôn ngữ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-control">
+                <p>Bản quyền © 2025 Booking.com. Mọi quyền được bảo lưu.</p>
+                <p>
+                    <a href="#">Điều khoản</a> |
+                    <a href="#">Chính sách bảo mật</a> |
+                    <a href="#">Liên hệ</a>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+                             <!-- script modal log-in -->
+    <script>
+        // Lấy các phần tử DOM cho modal
+        const signInBtn = document.getElementById('sign-in-btn');
+        const loginModal = document.getElementById('login-modal');
+        const closeModal = document.getElementById('close-modal');
+        const emailInput = document.getElementById('email');
+        const emailValidation = document.getElementById('email-validation');
+        const continueBtn = document.getElementById('continue-btn');
+        const googleBtn = document.getElementById('google-btn');
+
+        // Hàm hiển thị modal
+        signInBtn.addEventListener('click', () => {
+            loginModal.style.display = 'flex';
+        });
+
+        // Hàm đóng modal
+        closeModal.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+            emailInput.value = ''; // Reset input
+            emailValidation.style.display = 'none'; // Ẩn thông báo lỗi
+        });
+
+        // Đóng modal khi nhấp bên ngoài nội dung
+        loginModal.addEventListener('click', (e) => {
+            if (e.target === loginModal) {
+                loginModal.style.display = 'none';
+                emailInput.value = ''; // Reset input
+                emailValidation.style.display = 'none'; // Ẩn thông báo lỗi
+            }
+        });
+
+        // Hàm kiểm tra email hợp lệ
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Xử lý sự kiện input email
+        emailInput.addEventListener('input', () => {
+            if (emailInput.value === '') {
+                emailValidation.style.display = 'none';
+            } else if (!isValidEmail(emailInput.value)) {
+                emailValidation.style.display = 'block';
+            } else {
+                emailValidation.style.display = 'none';
+            }
+        });
+
+        // Xử lý sự kiện click nút Tiếp tục
+        continueBtn.addEventListener('click', () => {
+            const email = emailInput.value;
+            if (!isValidEmail(email)) {
+                emailValidation.style.display = 'block';
+                return;
+            }
+            // Giả lập gửi yêu cầu đăng nhập
+            alert(`Đăng nhập với email: ${email}`);
+            loginModal.style.display = 'none'; // Đóng modal sau khi đăng nhập
+            emailInput.value = ''; // Reset input
+            // Ở đây bạn có thể thêm logic gửi yêu cầu API đến server
+        });
+
+        // Xử lý sự kiện click nút Google
+        googleBtn.addEventListener('click', () => {
+            // Giả lập đăng nhập với Google
+            alert('Đăng nhập với Google được khởi tạo');
+            loginModal.style.display = 'none'; // Đóng modal sau khi đăng nhập
+            // Để tích hợp thực tế, bạn cần sử dụng Google Sign-In API
+            // Ví dụ: gapi.signin2.render hoặc Firebase Authentication
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93773a405e2e6771',t:'MTc0NTg1MDMxMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/modal.js"></script>
+
+    <script src="./assets/css/js/log_in.js"></script>
+    <script src="./assets/js/log_in.js"></script>
+   
+</body>
+</html>

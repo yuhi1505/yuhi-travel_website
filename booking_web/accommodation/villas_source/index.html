@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khu nghỉ dưỡng</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__navbar">
+            <div class="header__logo">
+                <a href="../../../booking_web/index.html" class="header__logo-link">
+                    <img src="./assets/img/Logo/logo.png" alt="LOGO" class="header__logo-img">
+                </a>
+            </div>
+            <div class="header__nation">
+                <a href="#" class="header__flag-link">
+                    <a class="header__language">VIETNAMESE</a>
+                    <img src="./assets/img/Flag.webp" alt="LOGO" class="header__flag-img">
+                    <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                </a>
+            </div>
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item btn">CHỖ NGHỈ ĐÃ ĐẶT</li> 
+                <li class="header__navbar-item btn">ĐĂNG KÍ</li>
+                <li class="header__navbar-item btn">ĐĂNG NHẬP</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="background__slider">
+        <div class="slider__content">
+            <div class="slider-text">
+                <h1 class="slider__title">Khu nghỉ dưỡng</h1>
+                <p class="slider__subtitle">Tìm khu nghỉ dưỡng lý tưởng với bạn</p>
+            </div>
+            <!-- search -->
+            <div class="filters__slider">
+                <select class="filter-select" id="cityFilter">
+                    <option value="hochiminh">TP Hồ Chí Minh</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="cantho">Cần Thơ</option>
+                    <option value="dalat">Đà Lạt</option>
+                    <option value="vungtau">Vũng Tàu</option>
+                </select>
+                <input type="date" class="filter-select">
+                <input type="date" class="filter-select">
+                <select class="filter-select" id="roomFilter">
+                    <option>2 người lớn - 0 trẻ em - 1 phòng</option>
+                    <option>1 người lớn - 0 trẻ em - 1 phòng</option>
+                    <option>4 người lớn - 2 trẻ em - 2 phòng</option>
+
+                </select>
+                <button class="slider__button">Tìm</button>
+            </div>
+            <div class="slider__checkbox">
+                <input type="checkbox" id="business" class="slider__checkbox-input">
+                <label for="business" class="slider__checkbox-label">Tôi đi công tác</label>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="../../../booking_web/index.html">Trang chủ</a> <span>></span> <a href="#">Khu nghỉ dưỡng </a> <span>></span> Tất cả khu nghỉ dưỡng 
+        </div>
+        <div class="content__header">
+            <h1 class="content-title">Những khu nghỉ dưỡng nổi bật</h1>
+            <p class="content-subtitle">Tìm ưu đãi khu nghỉ dưỡng  tuyệt vời cho đêm nay hoặc chuyển đi sắp tới</p>
+        </div>
+        <div class="filters">
+            <button>Khu nghỉ dưỡng có đêm nay</button>
+            <button>Khu nghỉ dưỡng  cho cuối tuần nay</button>
+        </div>
+        <div class="villas-grid">
+            <!-- 1 -->
+            <div class="villas-card">
+                <a href="#" class="villas-link">
+                    <div class="villas-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/662644222.jpg?k=90d150769ad113627dfb01adf5e2c05822bdbf933cba6207af8f8ed4449b2ec7&o=&hp=1" alt="Khách sạn" class="villas-image__img">
+                        <div class="villas-rating">10</div>
+                    </div>
+
+                </a>
+                <div class="villas-info">
+                    <h3 class="villas-name">Villa La Rose Blanc Thảo Điền</h3>
+                    <p class="villas-address">15 Đ. Số 11, 700000 TP. Hồ Chí Minh</p>
+                    <span class="villas-descrip">Với khu vườn, phòng chờ chung, sân hiên và quầy bar, Villa La Rose Blanc Thảo Điền tọa lạc ở Thảo Điền, TP. Hồ Chí Minh, chỉ cách Bảo tàng lịch sử Việt Nam 6.4 km. Chỗ nghỉ này có ban công, bàn bi-a, chỗ đậu xe riêng miễn phí và Wi-Fi miễn phí.
+                    </span>
+                    <div class="villas-price">VND 24.300.000</div>
+                    <div class="villas-per-night">Cho đêm nay</div>
+                </div>
+                <div class="villas-book-btn">
+                    <a href="#"><button class="villas-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 2 -->
+            <div class="villas-card">
+                <a href="#" class="villas-link">
+                    <div class="villas-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/648778991.jpg?k=c4d8de2a5a5a02d4eb3688e084661b9d02ad335f6fb57da800e1aae412f37b26&o=&hp=1" alt="Khách sạn" class="villas-image__img">
+                        <div class="villas-rating">9.1</div>
+                    </div>
+
+                </a>
+                <div class="villas-info">
+                    <h3 class="villas-name">Serenity Saigon Sky Villas</h3>
+                    <p class="villas-address">259 Điện Biên Phủ, Quận 3, TP. Hồ Chí Minh</p>
+                    <span class="villas-descrip">Nhìn ra thành phố, Serenity Saigon Sky Villas - Free One Way Airport Shuttle ở TP. Hồ Chí Minh cung cấp chỗ nghỉ có hồ bơi ngoài trời, khu vườn, phòng chờ chung, sân hiên và nhà hàng.
+                        Chỗ nghỉ có Wi-Fi miễn phí và chỗ đậu xe riêng có sẵn trong khuôn viên.
+                       Các điểm tham quan nổi tiếng gần chỗ nghỉ bao gồm Bảo tàng chứng tích chiến tranh, Chợ Tân Định và Dinh Thống Nhất. Sân bay Quốc tế Tân Sơn Nhất cách 6 km.
+                    </span>
+                    <div class="villas-price">VND 9.080.100</div>
+                    <div class="villas-per-night">Cho đêm nay</div>
+                </div>
+                <div class="villas-book-btn">
+                    <a href="#"><button class="villas-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 3 -->
+            <div class="villas-card">
+                <a href="#" class="villas-link">
+                    <div class="villas-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/633545661.jpg?k=0de64c2705243c18f354fe3cc95beeb055bdad1417873a2f207c6c5fa7a6e839&o=" alt="Khách sạn" class="villas-image__img">
+                        <div class="villas-rating">9.5</div>
+                    </div>
+
+                </a>
+                <div class="villas-info">
+                    <h3 class="villas-name">Royal Westlake Villa</h3>
+                    <p class="villas-address">45 Đường Tô Ngọc Vân, Quận Tây Hồ, 10000 Hà Nội</p>
+                    <span class="villas-descrip">Tọa lạc ở Hà Nội, cách Hồ Tây 3.3 km, Royal Westlake Villa - Full amenities - 400sqm cung cấp chỗ nghỉ có khu vườn,
+                         Wi-Fi miễn phí, bếp chung, cùng dịch vụ đưa đón miễn phí. Nằm cách Đền Quán Thánh 4.5 km, chỗ nghỉ cung cấp phòng chờ chung và chỗ đậu xe riêng miễn phí.
+                         Chỗ nghỉ cách Lăng Chủ tịch Hồ Chí Minh 4.6 km và Ô Quan Chưởng 4.9 km.
+                    </span>
+                    <div class="villas-price">VND 5.840.000</div>
+                    <div class="villas-per-night">Cho đêm nay</div>
+                </div>
+                <div class="villas-book-btn">
+                    <a href="#"><button class="villas-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 4 -->
+            <div class="villas-card">
+                <a href="#" class="villas-link">
+                    <div class="villas-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/486715303.jpg?k=56f42c15256d76f9861bd50a959ba6e119f3583326114eac3a0071b3c15d27bc&o=" alt="Khách sạn" class="villas-image__img">
+                        <div class="villas-rating">9.3</div>
+                    </div>
+
+                </a>
+                <div class="villas-info">
+                    <h3 class="villas-name">Charming luxury villa</h3>
+                    <p class="villas-address">26D4 Ciputra, Tây Hồ, Quận Tây Hồ, Hà Nội</p>
+                    <span class="villas-descrip"> Biệt thự có nhiều tiện nghi chăm sóc sức khỏe bao gồm phòng xông hơi khô và bể sục. Khách có thể thoải mái sử dụng hồ bơi trong nhà tại Charming luxury villa with outdoor spa and garden 4 bedrooms.
+
+                    Chỗ nghỉ cách Bảo tàng dân tộc học Việt Nam 5.1 km và Trung tâm thương mại Vincom Nguyễn Chí Thanh 7.1 km.
+                    </span>
+                    <div class="villas-price">VND 9.080.100</div>
+                    <div class="villas-per-night">Cho đêm nay</div>
+                </div>
+                <div class="villas-book-btn">
+                    <a href="#"><button class="villas-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 5 -->
+            <div class="villas-card">
+                <a href="#" class="villas-link">
+                    <div class="villas-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/555548697.jpg?k=bbb137b1ee8f506c7b0fe88a7bf06203bbfc2e4c48084b88d541bd56dbc78fd1&o=&hp=1" alt="Khách sạn" class="villas-image__img">
+                        <div class="villas-rating">8.9</div>
+                    </div>
+
+                </a>
+                <div class="villas-info">
+                    <h3 class="villas-name">Villa Vũng Tàu</h3>
+                    <p class="villas-address">Trần Phú, Thuy Duong 3, Thuy Van, Vũng Tàu</p>
+                    <span class="villas-descrip">Chỗ nghỉ có cả dịch vụ cho thuê xe đạp và dịch vụ cho thuê ô tô, đồng thời du khách có thể leo núi và đi xe đạp gần đó.
+
+                        Các điểm tham quan nổi tiếng gần Villa Vũng Tàu - Biệt Thự Vũng Tàu Gần Biển Gần Trung Tâm bao gồm Bãi Trước, Bãi Dâu và Bạch Dinh. 
+                        Sân bay Quốc tế Tân Sơn Nhất cách 103 km, đồng thời chỗ nghỉ có cung cấp dịch vụ đưa đón sân bay mất phí.
+                    </span>
+                    <div class="villas-price">VND 5.392.230</div>
+                    <div class="villas-per-night">Cho đêm nay</div>
+                </div>
+                <div class="villas-book-btn">
+                    <a href="#"><button class="villas-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 6 -->
+            <div class="villas-card">
+                <a href="#" class="villas-link">
+                    <div class="villas-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/603152720.jpg?k=7b987e78a583418d997cef202609c51e90c8c832d6097ba555da7efb29504756&o=" alt="Khách sạn" class="villas-image__img">
+                        <div class="villas-rating">9.2</div>
+                    </div>
+
+                </a>
+                <div class="villas-info">
+                    <h3 class="villas-name">FREELANCE VILLA</h3>
+                    <p class="villas-address">43 Đường Vạn Hạnh, Đà Lạt</p>
+                    <span class="villas-descrip">Nhìn ra núi, FREELANCE VILLA cung cấp chỗ nghỉ có ban công và ấm đun nước, cách Sân golf Dalat Palace Golf Club khoảng 1.8 km. 
+                        Biệt thự này có khu vườn, tiện nghi BBQ, Wi-Fi miễn phí và chỗ đậu xe riêng miễn phí.
+                    </span>
+                    <div class="villas-price">VND 2.452.800</div>
+                    <div class="villas-per-night">Cho đêm nay</div>
+                </div>
+                <div class="villas-book-btn">
+                    <a href="#"><button class="villas-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 7 -->
+            <div class="villas-card">
+                <a href="#" class="villas-link">
+                    <div class="villas-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/235835264.jpg?k=0ef9d893e33f7982a7be6a665c435c07fe16b94d68a499b8868fb7235316dbbf&o=" alt="Khách sạn" class="villas-image__img">
+                        <div class="villas-rating">8.1</div>
+                    </div>
+
+                </a>
+                <div class="villas-info">
+                    <h3 class="villas-name">Q&P Smart Ville</h3>
+                    <p class="villas-address">Lô C7 Hùng Vương (C-3), Đà Lạt</p>
+                    <span class="villas-descrip">Q&P Smart Ville nhìn ra thành phố, có Wi-Fi miễn phí và chỗ đậu xe riêng miễn phí, tọa lạc ở Đà Lạt, cách Vườn hoa Đà Lạt 4.1 km.
+
+                        Tất cả các căn có thiết kế gồm khu vực ghế ngồi, TV màn hình phẳng có truyền hình cáp, cùng phòng tắm riêng có trang bị đồ vệ sinh cá nhân miễn phí, vòi xịt/chậu rửa vệ sinh và vòi sen. Một số căn có ban công và/hoặc sân trong nhìn ra núi hoặc khu vườn.
+                        
+                    </span>
+                    <div class="villas-price">VND 1.141.125</div>
+                    <div class="villas-per-night">Cho đêm nay</div>
+                </div>
+                <div class="villas-book-btn">
+                    <a href="#"><button class="villas-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-lists">
+            <div class="footer-group-support">
+                <h3 class="footer-group-title">Hỗ Trợ</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Câu hỏi thường gặp</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Liên hệ chúng tôi</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Hướng dẫn đặt phòng</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách hoàn tiền</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Trung tâm bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-discover">
+                <h3 class="footer-group-title">Khám phá</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình Genius</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Ưu đãi theo mùa</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Bài viết du lịch</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Dành cho doanh nghiệp</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Đại lý du lịch</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-partner">
+                <h3 class="footer-group-title">Quan hệ đối tác</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Đăng ký đối tác</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Trở thành đại lý</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình liên kết</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Quản lý tài khoản</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Hỗ trợ đối tác</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-legalAndsetting">
+                <h3 class="footer-group-title">Điều khoản và cài đặt</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Điều khoản sử dụng</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách bảo mật</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách cookie</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Quyền riêng tư</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Cài đặt ngôn ngữ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-control">
+            <p>Bản quyền © 2025 YUHI travel.com. Mọi quyền được bảo lưu.</p>
+            <p>
+                <a href="#">Điều khoản</a> |
+                <a href="#">Chính sách bảo mật</a> |
+                <a href="#">Liên hệ</a>
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>

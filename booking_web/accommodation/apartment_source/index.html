@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Căn hộ</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__navbar">
+            <div class="header__logo">
+                <a href="../../../booking_web/index.html" class="header__logo-link">
+                    <img src="./assets/img/Logo/logo.png" alt="LOGO" class="header__logo-img">
+                </a>
+            </div>
+            <div class="header__nation">
+                <a href="#" class="header__flag-link">
+                    <a class="header__language">VIETNAMESE</a>
+                    <img src="./assets/img/Flag.webp" alt="LOGO" class="header__flag-img">
+                    <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                </a>
+            </div>
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item btn">CHỖ NGHỈ ĐÃ ĐẶT</li> 
+                <li class="header__navbar-item btn">ĐĂNG KÍ</li>
+                <li class="header__navbar-item btn">ĐĂNG NHẬP</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="background__slider">
+        <div class="slider__content">
+            <div class="slider-text">
+                <h1 class="slider__title">Căn hộ</h1>
+                <p class="slider__subtitle">Tìm căn hộ lý tưởng với bạn</p>
+            </div>
+            <div class="filters__slider">
+                <select class="filter-select" id="cityFilter">
+                    <option value="hochiminh">TP Hồ Chí Minh</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="cantho">Cần Thơ</option>
+                    <option value="dalat">Đà Lạt</option>
+                    <option value="vungtau">Vũng Tàu</option>
+                </select>
+                <input type="date" class="filter-select">
+                <input type="date" class="filter-select">
+                <select class="filter-select" id="roomFilter">
+                    <option>2 người lớn - 0 trẻ em - 1 phòng</option>
+                    <option>1 người lớn - 0 trẻ em - 1 phòng</option>
+                    <option>4 người lớn - 2 trẻ em - 2 phòng</option>
+
+                </select>
+                <button class="slider__button">Tìm</button>
+            </div>
+            <div class="slider__checkbox">
+                <input type="checkbox" id="business" class="slider__checkbox-input">
+                <label for="business" class="slider__checkbox-label">Tôi đi công tác</label>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="breadcrumb">
+            <a href="../../../booking_web/index.html">Trang chủ</a> <span>></span> <a href="#">Căn hộ</a> <span>></span> Tất cả căn hộ
+        </div>
+        <div class="content__header">
+            <h1 class="content-title">Những căn hộ nổi bật</h1>
+            <p class="content-subtitle">Tìm ưu đãi căn hộ tuyệt vời cho đêm nay hoặc chuyển đi sắp tới</p>
+        </div>
+        <div class="filters">
+            <button>Căn hộ có đêm nay</button>
+            <button>Căn hộ cho cuối tuần nay</button>
+        </div>
+        <div class="apartment-grid">
+            <!-- 1 -->
+            <div class="apartment-card">
+                <a href="#" class="apartment-link">
+                    <div class="apartment-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/657474453.jpg?k=60191ca4bd2685361507a118dfb68a6f356a68fd18ca3a06e96835a3a831752c&o=" alt="Căn hộ" class="apartment-image__img">
+                        <div class="apartment-rating">8.0</div>
+                    </div>
+
+                </a>
+                <div class="apartment-info">
+                    <h3 class="apartment-name">Sarene Lumiere Riverside Thao Dien</h3>
+                    <p class="apartment-address">Lumiere Riverside Thao Dien, 259 Vo Nguyen Giap Street, 700000 TP. Hồ Chí Minh</p>
+                    <span class="apartment-descrip">Khách sạn căn hộ có sân hiên nơi khách có thể nhìn ra thành phố, khu vực ghế ngồi, 
+                        TV màn hình phẳng truyền hình vệ tinh, bếp đầy đủ tiện nghi gồm tủ lạnh và lò vi sóng,
+                         cùng phòng tắm riêng được trang bị vòi xịt/chậu rửa vệ sinh và đồ vệ sinh cá nhân miễn phí. Mỗi căn đều được thiết kế có ban công nhìn ra núi.
+                    </span>
+                    <div class="apartment-price">VND 2.280.000</div>
+                    <div class="apartment-per-night">Cho đêm nay</div>
+                </div>
+                <div class="apartment-book-btn">
+                    <a href="#"><button class="apartment-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 2 -->
+            <div class="apartment-card">
+                <a href="#" class="apartment-link">
+                    <div class="apartment-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/576571064.jpg?k=439351afe14d48e7b8e06bf91ed82b4ac360648f1e443c67024f124ea34e93e8&o=" alt="Căn hộ" class="apartment-image__img">
+                        <div class="apartment-rating">8.8</div>
+                    </div>
+
+                </a>
+                <div class="apartment-info">
+                    <h3 class="apartment-name">LUMI Hotel & Apartment</h3>
+                    <p class="apartment-address">140/28F, Đường Lý Tự Trọng, Phường An Cư, Quận Ninh Kiều</p>
+                    <span class="apartment-descrip">LUMI Hotel & Apartment nhìn ra thành phố, có Wi-Fi miễn phí và chỗ đậu xe riêng miễn phí, nằm ở Hà Nội, 
+                        cách Trung tâm thương mại Vincom Nguyễn Chí Thanh 1.9 km.
+                        LUMI Hotel & Apartment cách Bảo tàng dân tộc học Việt Nam 2 km. Sân bay Quốc tế Nội Bài cách 22 km, đồng thời chỗ nghỉ có cung cấp dịch vụ đưa đón sân bay mất phí.
+                    </span>
+                    <div class="apartment-price">VND 411.825</div>
+                    <div class="apartment-per-night">Cho đêm nay</div>
+                </div>
+                <div class="apartment-book-btn">
+                    <a href="#"><button class="apartment-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 3 -->
+            <div class="apartment-card">
+                <a href="#" class="apartment-link">
+                    <div class="apartment-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/646941773.jpg?k=04a6018db9064039c4b6a83cbc86e0d37f7396cf7dfd79e1d1aa3f098aa88ec3&o=&hp=1" alt="Căn hộ" class="apartment-image__img">
+                        <div class="apartment-rating">9.7</div>
+                    </div>
+
+                </a>
+                <div class="apartment-info">
+                    <h3 class="apartment-name">Khanh Uyen 3 Hotel & Apart Central</h3>
+                    <p class="apartment-address">91 Phan Bội Châu, 67000 Đà Lạt</p>
+                    <span class="apartment-descrip">Căn hộ có TV màn hình phẳng và phòng tắm riêng với đồ vệ sinh cá nhân miễn phí, máy sấy tóc và vòi sen. Một số căn có sân hiên và/hoặc ban công nhìn ra thành phố hoặc khu vườn.
+
+                        Khanh Uyen 3 Hotel & Apart Central có cả dịch vụ cho thuê xe đạp và dịch vụ cho thuê ô tô.
+                        
+                        Chỗ nghỉ cách Công viên Yersin 1.8 km. Sân bay Liên Khương cách 32 km, đồng thời chỗ nghỉ có cung cấp dịch vụ đưa đón sân bay mất phí.
+                    </span>
+                    <div class="apartment-price">VND 516.000</div>
+                    <div class="apartment-per-night">Cho đêm nay</div>
+                </div>
+                <div class="apartment-book-btn">
+                    <a href="#"><button class="apartment-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 4 -->
+            <div class="apartment-card">
+                <a href="#" class="apartment-link">
+                    <div class="apartment-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/659347019.jpg?k=9ecc73eacea1bebee7fb30537d7491da278e361d3308696823809b1f8f0ba29c&o=&hp=1" alt="Căn hộ" class="apartment-image__img">
+                        <div class="apartment-rating">9.7</div>
+                    </div>
+
+                </a>
+                <div class="apartment-info">
+                    <h3 class="apartment-name">RUSTIC APARTMENT</h3>
+                    <p class="apartment-address">53/12 Đường Lê Lai Tầng 2, 900000 Cần Thơ</p>
+                    <span class="apartment-descrip">Với sân hiên và quầy lễ tân 24 giờ, RUSTIC APARTMENT- BeTong Residences nằm tại vị trí thuận tiện ở Cần Thơ, cách Trung tâm thương mại Vincom Xuân Khánh 15 phút đi bộ và Vincom Plaza Hùng Vương 1.9 km. 
+                        Chỗ nghỉ điều hòa này cách Bến Ninh Kiều 14 phút đi bộ, khách có thể sử dụng WiFi miễn phí và chỗ đậu xe riêng có sẵn trong khuôn viên.
+                    </span>
+                    <div class="apartment-price">VND 2.070.000</div>
+                    <div class="apartment-per-night">Cho đêm nay</div>
+                </div>
+                <div class="apartment-book-btn">
+                    <a href="#"><button class="apartment-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 5 -->
+            <div class="apartment-card">
+                <a href="#" class="apartment-link">
+                    <div class="apartment-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/253353776.jpg?k=98096afcdbd203899bebf696121927bda5e94ead8b90a49d620d46f214dceb74&o=&hp=1" alt="Căn hộ" class="apartment-image__img">
+                        <div class="apartment-rating">8.8</div>
+                    </div>
+
+                </a>
+                <div class="apartment-info">
+                    <h3 class="apartment-name">Amora Hotel & Apartment</h3>
+                    <p class="apartment-address">89A Phan Chu Trinh, Phường 2, Vũng Tàu, Việt Nam, Vũng Tàu</p>
+                    <span class="apartment-descrip">Nằm ở TP. Hồ Chí Minh, cách Chợ Tân Định 8 phút đi bộ, La Vela Saigon apartment cung cấp chỗ nghỉ có hồ bơi ngoài trời,
+                        chỗ đậu xe riêng miễn phí, trung tâm thể dục và phòng chờ chung.
+                        Khách sạn có sân hiên và nhìn ra thành phố, ngoài ra du khách có thể thưởng thức bữa ăn tại nhà hàng hoặc đồ uống tại quầy bar.
+                    </span>
+                    <div class="apartment-price">VND 782.000</div>
+                    <div class="apartment-per-night">Cho đêm nay</div>
+                </div>
+                <div class="apartment-book-btn">
+                    <a href="#"><button class="apartment-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            <!-- 6 -->
+            <div class="apartment-card">
+                <a href="#" class="apartment-link">
+                    <div class="apartment-image">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/664794130.jpg?k=4bdaaa7c71ab10fc09d8ef0945967caf7f5b2b925b6e989b2e615e17ef3f10d4&o=&hp=1" alt="Căn hộ" class="apartment-image__img">
+                        <div class="apartment-rating">9.5</div>
+                    </div>
+
+                </a>
+                <div class="apartment-info">
+                    <h3 class="apartment-name">Metropole Luxury - VIP Apartment</h3>
+                    <p class="apartment-address">QPG7+PCP Thủ Đức, Hồ Chí Minh, Việt Nam, TP. Hồ Chí Minh</p>
+                    <span class="apartment-descrip">Cách Bảo tàng lịch sử Việt Nam 2 km, Metropole Luxury - VIP Apartment có khu vườn, quầy bar, điều hòa, ban công và Wi-Fi miễn phí.
+
+                        Căn hộ có sân hiên nơi khách có thể nhìn ra thành phố, khu vực ghế ngồi, TV màn hình phẳng truyền hình cáp, bếp đầy đủ tiện nghi gồm tủ lạnh và lò nướng, 
+                        cùng phòng tắm riêng được trang bị vòi xịt/chậu rửa vệ sinh và đồ vệ sinh cá nhân miễn phí. Mỗi căn đều được thiết kế có sân trong nhìn ra hồ.
+                    </span>
+                    <div class="apartment-price">VND 2.310.000</div>
+                    <div class="apartment-per-night">Cho đêm nay</div>
+                </div>
+                <div class="apartment-book-btn">
+                    <a href="#"><button class="apartment-btn">Đặt ngay</button></a>
+                </div>   
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-lists">
+            <div class="footer-group-support">
+                <h3 class="footer-group-title">Hỗ Trợ</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Câu hỏi thường gặp</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Liên hệ chúng tôi</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Hướng dẫn đặt phòng</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách hoàn tiền</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Trung tâm bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-discover">
+                <h3 class="footer-group-title">Khám phá</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình Genius</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Ưu đãi theo mùa</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Bài viết du lịch</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Dành cho doanh nghiệp</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Đại lý du lịch</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-partner">
+                <h3 class="footer-group-title">Quan hệ đối tác</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Đăng ký đối tác</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Trở thành đại lý</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chương trình liên kết</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Quản lý tài khoản</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Hỗ trợ đối tác</a></li>
+                </ul>
+            </div>
+            <div class="footer-group-legalAndsetting">
+                <h3 class="footer-group-title">Điều khoản và cài đặt</h3>
+                <ul class="footer-group-list">
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Điều khoản sử dụng</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách bảo mật</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Chính sách cookie</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Quyền riêng tư</a></li>
+                    <li class="footer-group-item"><a href="#" class="footer-group-link">Cài đặt ngôn ngữ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-control">
+            <p>Bản quyền © 2025 Booking.com. Mọi quyền được bảo lưu.</p>
+            <p>
+                <a href="#">Điều khoản</a> |
+                <a href="#">Chính sách bảo mật</a> |
+                <a href="#">Liên hệ</a>
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>
