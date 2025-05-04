@@ -239,18 +239,47 @@ body {
 /* SLIDER */
 .slider{
     position: relative;
-    margin-top: 2px;
-    padding-top: 25%;
+    height: 60vh; /* Đặt chiều cao cố định */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    overflow: hidden;
     background: url('https://cdn3.ivivu.com/2023/10/du-lich-sai-gon-ivivu1.jpg') no-repeat center center/cover;
+    margin-top: 16px;
+}
+/* Tạo lớp background riêng biệt để chỉ animation background */
+.slider-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=2049&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; 
+    background-position: center; 
+    transition: opacity 1s ease;
+    z-index: 0;
+}
+/* Tạo lớp overlay để tối hơn để text content dễ đọc hơn */
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 .text-content{
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    
-    /* transform: translate(-50%, -50%); */
+    position: relative;
+    /* top: -5%; Đẩy nội dung lên trên */
+    left: -3%;
+    transform: translate(-50%, -50%); /* Căn giữa theo cả hai chiều */
+    z-index: 2;
+    color: white;
     text-align: center;
-    color: #fff;
+    padding-top: 15vh;
 }
 
 .content__title {
@@ -267,28 +296,37 @@ body {
     margin-bottom: 20px;
     text-align: center;
 }
-
-.content__left {
-    position: absolute;
-    top: 82%;
-    left: 20%;
-    flex: 1;
-    padding: 20px;
-    border: 8px solid var(--primary-color); /* Tăng độ dày viền lên 8px */
-    border-radius: 8px; /* Bo góc phần tử */
-     
-}
 /* SEARCH */
+
+/* Điều chỉnh vị trí của thanh tìm kiếm */
+.content__slider-search {
+    position: relative;
+    top: 25%; /* Đẩy xuống dưới hơn */
+    left: 30%; /* Đặt vào giữa */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%; /* Đảm bảo chiều rộng phù hợp */
+    max-width: 1000px;
+}
+
+/* Điều chỉnh phần content__left */
+.content__left {
+    width: 100%; /* Đảm bảo chiều rộng đầy đủ */
+    padding: 10px;
+    border: 4px solid #f5a623; /* Giảm độ dày viền */
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Đảm bảo search-bar hiển thị đúng */
 .search-bar {
     display: flex;
     align-items: center;
-    border: 4px solid #f5a623;
-    border-radius: 8px;
     background-color: #fff;
     padding: 5px;
     gap: 10px;
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .search-bar__item {
