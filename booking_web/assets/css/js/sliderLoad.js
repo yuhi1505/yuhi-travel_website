@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Mảng các ảnh cho slider
     const sliderImages = [
-        'https://cdn3.ivivu.com/2023/10/du-lich-sai-gon-ivivu1.jpg',
+        'https://th.bing.com/th/id/R.5d4c6a222a742af27d8608dad5ee272c?rik=Ml6n%2bhNEqjyWrw&pid=ImgRaw&r=0',
         'https://www.dulichyetetphcm.com/wp-content/uploads/2023/07/du-lich-viet-nam-6.jpeg',
         'https://cdn3.ivivu.com/2023/10/du-lich-sai-gon-ivivu2.jpg',
+        'https://saigonriders.com/wp-content/uploads/2018/11/can-tho-walking-street-from-a-distant-view-in-the-middle-of-the-night-saigon-riders.png',
+        'https://vietnamdiscovery.com/wp-content/uploads/2020/02/Nightlife-in-Nha-Trang.jpg',
+        'https://booking.pystravel.vn/uploads/posts/avatar/1684752378.jpg'
     ];
     
     const slider = document.querySelector('.slider');
@@ -88,5 +91,5 @@ document.addEventListener('DOMContentLoaded', function() {
     setupSlider();
     
     // Thay đổi ảnh mỗi 5 giây
-    setInterval(changeSliderImage, 3000);
+    setInterval(changeSliderImage, 5000);
 });

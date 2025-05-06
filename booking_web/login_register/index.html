@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Registration </title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="container">
+
+    <div class="form-container register-container">
+      <form action="#">
+        <h1>ĐĂNG KÍ</h1>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Đăng kí</button>
+        <span>Hoặc</span>
+        <div class="social-container">
+          <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+          <a href="#" class="social"><i class="lni lni-google"></i></a>
+          <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-container login-container">
+      <form action="#">
+        <h1>ĐĂNG NHẬP</h1>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Ghi nhớ tài khoản</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Quên mật khẩu?</a>
+          </div>
+        </div>
+        <button>Đăng nhập</button>
+        <span>Hoặc</span>
+        <div class="social-container">
+            <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+            <a href="#" class="social"><i class="lni lni-google"></i></a>
+            <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Chào mừng bạn trở lại!</h1>
+          <p>Nếu bạn đã có tài khoản, đăng nhập tại đây</p>
+          <button class="ghost" id="login">Đăng nhập
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Chào mừng bạn đến với chúng tôi!</h1>
+          <p>Nếu bạn chưa có tài khoản, hãy tham gia cùng chúng tôi</p>
+          <button class="ghost" id="register">Đăng kí
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./login.js"></script>
+
+</body>
+</html>
